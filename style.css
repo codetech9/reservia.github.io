@@ -1,21 +1,64 @@
+/*Police*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.ttf');
+    src: url('fonts/Raleway-Bold.ttf');
+    src: url('fonts/Raleway-ExtraLight.ttf');
+    src: url('fonts/Raleway-Light.ttf');
+    src: url('fonts/Raleway-Thin.ttf');
+}
+
+/*body*/
+body {
+    font-family: 'Raleway';
+}
+
+/*HEADER*/
+
+#header-desktop {
+    display: flex;
+    justify-content: space-between;
+}
+
+header-desktop a {
+    text-decoration: none;
+    color: #0065FC;
+}
+
+#header-desktop nav :nth-child(1) {
+    border-top: 1px solid #0065FC;
+}
+
+
+#header-desktop :nth-child(2) {
+    color: black;
+}
+
+/*H1*/
+h1 {
+    font-weight: Bold;
+    font-size: 16px;
+}
+
+
+
+
 /*id hebergements*/
-#hebergements{
+#hebergements {
     background-color: #f2f2f2;
-    border: 2 px solid #f2f2f2;
     max-width: 880px;
-    border: solid 1px red;
-    border-radius: 2%;
+    border-radius: 5%;
 }
 
 /*heberg-card*/
-#heberg-card{
+#heberg-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 /*hebergement-card-list*/
-.heberg-card-list{
+.heberg-card-list {
     border: solid 1px white;
     background-color: white;
     border-radius: 10%;
@@ -25,7 +68,7 @@
 }
 
 /*hbergement-cards-list img*/
-.heberg-card-list img{
+.heberg-card-list img {
     height: 114px;
     width: 246px;
     border-radius: 20px 20px 0 0 ;
