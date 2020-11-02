@@ -37,12 +37,23 @@ header-desktop a {
 /*H1*/
 h1 {
     font-weight: Bold;
-    font-size: 16px;
+    font-size: 20px;
+}
+
+
+
+/****************************  MID-SECTION   *********************************/
+#mid-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
 
 
 
 
+/*********************************** Hébergements ********************************/
 
 /*id hebergements*/
 #hebergements {
@@ -74,7 +85,7 @@ h1 {
     margin: 15px 0;
 }
 
-/*hbergement-cards-list img*/
+/*hebergement-cards-list img*/
 .heberg-card-list img {
     height: 114px;
     width: 246px;
@@ -83,12 +94,82 @@ h1 {
 
 
 
+
+/*************************** POPULAIRES *****************************/
+
+#populaires {
+    background-color: #f2f2f2;
+}
+
+
+
+#populaires-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.populaires-card-list {
+    border:#f2f2f2 2px solid;
+    /*border-radius: 5% 0 0 5% ;*/
+    align-items: center;
+    display: flex;
+    width: 550px;
+    background-color: white;
+    margin: 20px;
+}
+
+
+.card-img {
+    width: 150px;
+}
+
+.populaires-card-list img {
+    height: 100px;
+   padding-right: 50px;
+}
+
+/****************************** Activités ***************************************/
+#trois{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.act-cards {
+    
+    height: 350px;
+}
+
+.act-cards img {
+    height: 300px;
+    width: 300px;
+}
+
+
+.act-card-1 {
+    
+    height: 150px;
+}
+
+
+
+.act-card-1 img {
+    height: 100px;
+    width: 150px;
+}
+
+
+/****************************** FOOTER *****************************/
+
+
 /*FOOTER*/
 #footer-edit {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #f2f2f2;
+    flex-wrap: wrap;
 }
 
 #footer-edit h4 {
@@ -105,3 +186,4 @@ h1 {
     text-decoration: none;
     color: black;
 }
+
