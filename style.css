@@ -130,34 +130,98 @@ h1 {
 }
 
 /****************************** Activités ***************************************/
-#trois{
+#act-block {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+    justify-content: space-between;
+    
 }
-
+ .act-cols {
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
 
 .act-cards {
-    
-    height: 350px;
+    height: 455px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 300px;
+    border-radius: 20px;
+}
+
+.card-foot {
+    height: 55px;
 }
 
 .act-cards img {
-    height: 300px;
+    border-radius: 20px 20px 0 0;
+    height: 390px;
+    overflow:auto;
+    width:300px;
+   object-fit: cover;
+}
+
+.act-card-1 {
+    height: 235px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 300px;
 }
 
-
-.act-card-1 {
-    
-    height: 150px;
-}
-
-
-
 .act-card-1 img {
-    height: 100px;
-    width: 150px;
+    height: 180px;
+    border-radius: 20px 20px 0 0;
+    overflow:auto;
+    width: 300px;
 }
+
+.act-card-3 {
+    height: 164px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 300px;
+}
+
+.act-card-3 img {
+   height: 109px;
+   width: 300px;
+   border-radius: 20px 20px 0 0;
+}
+
+#dame {
+    height: 195px;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#dame img {
+    height: 140px;
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+#Longchamp {
+    height: 210px;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Longchamp img {
+    height: 155px;
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+
+}
+
+
 
 
 /****************************** FOOTER *****************************/
