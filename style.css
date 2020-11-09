@@ -11,7 +11,9 @@
 /*body*/
 body {
     font-family: 'Raleway';
+    box-sizing: border-box;
 }
+
 
 /*HEADER*/
 
@@ -37,7 +39,7 @@ header-desktop a {
 /*H1*/
 h1 {
     font-weight: Bold;
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 
@@ -47,7 +49,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 
 
@@ -89,7 +90,7 @@ h1 {
 .heberg-card-list img {
     height: 114px;
     width: 246px;
-    border-radius: 20px 20px 0 0 ;
+    border-radius: 20px 20px 0 0;
 }
 
 
@@ -97,36 +98,84 @@ h1 {
 
 /*************************** POPULAIRES *****************************/
 
+/*************************** POPULAIRES *****************************/
+
 #populaires {
     background-color: #f2f2f2;
+    border-radius: 20px;
+    max-width: 419px;
 }
-
 
 
 #populaires-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    height: 624px;
+    max-width: 419px;
 }
 
 .populaires-card-list {
-    border:#f2f2f2 2px solid;
-    /*border-radius: 5% 0 0 5% ;*/
+    border: white 2px solid;
+    border-radius: 20px;
     align-items: center;
     display: flex;
-    width: 550px;
+    height: 145;
+    width: 343px;
     background-color: white;
-    margin: 20px;
 }
 
 
-.card-img {
-    width: 150px;
+.populaires-card-list h5{
+    font-size: 16px;
+}
+
+
+.populaires-card-list a:visited {
+    color: black;
 }
 
 .populaires-card-list img {
-    height: 100px;
-   padding-right: 50px;
+    height: 134px;
+    width: 126px;
+    border-radius: 20px 0 0 20px;
+    padding: 3px;
+}
+
+#flex-title {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo {
+    padding-top: 30px;
+}
+
+
+.stars {
+    font-size: 10px;
+}
+
+.title span {
+    font-weight: bold;
+}
+
+.title a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.blue {
+    color: #0065fc;
+    font-size: 16px;
+}
+
+.grey {
+    color: grey;
+    font-size: 16px;
 }
 
 /****************************** Activités ***************************************/
@@ -134,15 +183,16 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    
+
     justify-content: space-between;
-    
+
 }
- .act-cols {
-     display: flex;
+
+.act-cols {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
- }
+}
 
 .act-cards {
     height: 455px;
@@ -158,9 +208,9 @@ h1 {
 .act-cards img {
     border-radius: 20px 20px 0 0;
     height: 390px;
-    overflow:auto;
-    width:300px;
-   object-fit: cover;
+    overflow: auto;
+    width: 300px;
+    object-fit: cover;
 }
 
 .act-card-1 {
@@ -174,7 +224,7 @@ h1 {
 .act-card-1 img {
     height: 180px;
     border-radius: 20px 20px 0 0;
-    overflow:auto;
+    overflow: auto;
     width: 300px;
 }
 
@@ -187,9 +237,9 @@ h1 {
 }
 
 .act-card-3 img {
-   height: 109px;
-   width: 300px;
-   border-radius: 20px 20px 0 0;
+    height: 109px;
+    width: 300px;
+    border-radius: 20px 20px 0 0;
 }
 
 #dame {
@@ -223,17 +273,17 @@ h1 {
 
 
 
-
 /****************************** FOOTER *****************************/
 
 
 /*FOOTER*/
 #footer-edit {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #f2f2f2;
     flex-wrap: wrap;
+    margin-top: 5%;
 }
 
 #footer-edit h4 {
@@ -250,4 +300,3 @@ h1 {
     text-decoration: none;
     color: black;
 }
-
