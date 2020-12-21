@@ -4,8 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
 
-
+/*https://fonts.google.com/specimen/Raleway?query=raleway*/
 
 body {
     font-family: 'Raleway';
@@ -15,15 +17,15 @@ body {
 }
 
 body a {
-    color: black;
+    color: #000000;
     text-decoration: none;
 }
 
 /*------------------ HEADER -----------------------------*/
 
-
 .logo {
-    padding-top: 40px;
+    margin-top: 15px;
+    margin-left: 30px;
 }
 
 #header-desktop {
@@ -32,6 +34,7 @@ body a {
     margin: 0 auto;
     max-width: 1334px;
     padding: 0px;
+    flex-wrap: wrap;
 }
 
 header-desktop a {
@@ -48,7 +51,7 @@ header-desktop a {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    
+    font-weight: 600;
 }
 
 .Hebergement {
@@ -62,62 +65,84 @@ header-desktop a {
 
 .link {
     padding-top:40px ;
+    font-weight: bold;
 }
 
 #header-desktop :nth-child(2) {
-    color: black;
+    color: #000000;
+    font-weight: 600;
 }
 
 #header-desktop :nth-child(3) {
     color: #0065FC;
+    font-weight: 700;
 }
 
 /*-- H1 --*/
-
 h1 {
     font-size: 20px;
+    margin-left: 30px;
 }
+
+#para{
+    margin-left: none;
+}
+
+#parap {
+    margin-left: 30px;
+}
+
 
 /*--------------------------- Form---------------------------------*/
 #forms {
     display: flex;
     width: 430px;
     border-radius: 20px 20px;
+    margin-left: 30px;
 }
 
 .map-card {
     background-color: #f2f2f2;
     border-radius: 20px 0 0 20px;
+    height: 45px;
 }
 
 .map {
-    border: 1px solid #f2f2f2;
     margin: auto 0;
-    font-size: 20px;
-    width: 53px;
+    font-size: 15px;
+    width: 40px;
     text-align: center;
-    margin-top:30% ;
+    margin-top:35%;
 }
 
-.form-size {
-    height: 48px;
+#formsize {
+    height: 41px;
     width: 234px;
     border: none;
-    text-align: center;
+    /*text-align: center;*/
+    padding-left: 10px;
     font-weight: bold;
-    color: black;
     border: #f2f2f2 solid 1px;
+    font-size: 16px;
+    color: #000000;
+}
+
+#formsize::placeholder {
+    color:#000000;
+    font-size:15px;
 }
 
 
 .button {
-    height: 59px;
-    width: 141px;
+    height: 46px;
+    width: 90px;
     background-color: #0065fc;
     color: white;
     border-radius:  0  20px 20px  0;
     border:none;
+    font-weight: bold;
 }
+
 
 /*------------------------Filtres-------------------------- */
 #section-head {
@@ -126,47 +151,82 @@ h1 {
 }
 
 
-#filtres-section {
-    max-width: 930px;
+#ctr-filtres-section {
+    max-width: 1334px;
+    margin-bottom: -15px;    
 }
 
-.listflex {
+
+#ctr-filtres {
     display: flex;
     justify-content: space-between;
-    padding: 0px;
-}
-
-.listflex :nth-child(1) {
-    border: none;
-    font-weight: bold;
-    padding-top: 15px;
+    max-width: 930px;
+    margin-left: 30px;
 }
 
 
-.listflex li {
+#filtres{
+    display: flex;
     list-style-type: none;
-    border: solid 2px #dddddd;
+    justify-content: space-between;
+    width: 800px;
+    flex-wrap: wrap;
+    
+}
+
+.filtres-list {
+    border: 1px solid #d9d9d9;
     border-radius: 50px 50px;
-    padding: 0px;
-    box-sizing: border-box;
+    padding: 9px
 }
 
-.listflex li span {
-    font-size: 16px;
-    margin: 0 6px;
-}
 
+h3{
+    padding: 5px;
+    font-weight: bold;
+}
 
 .icone {
-    border-radius: 50%;
-    font-size: 20px;
-    color: royalblue;
-    background-color: #deebff;
+    color: #0065fc;
+}
+
+.circles {
+    background-color:#deebff;
     padding: 10px;
+    border-radius: 50%;
+    margin-left: -10px;
+    height: 80px;
+    width: 80px;
+}
+
+/* ---------------------Section Informations --------------------------------------- */
+#info {
+    display: flex;
+    max-width: 1334px;
+    margin: 0 auto;
+    padding-left: 30px;
 }
 
 
-/*-----------------------Hébergement------------------------ */
+
+.icones {
+    border: 1px solid grey;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+    text-align: center;
+    color: #0065fc;
+    font-size: 12px;
+}
+
+#info-desc {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+
+/* -----------------------Hébergement------------------------ */
 
 #H-section {
     max-width: 1334px;
@@ -189,16 +249,22 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
+
+
+#hebergement h2 { 
+    margin-left: 25px;
+    font-size: 20px;
+}
+
 
 .h-list {
     box-sizing: border-box;
-    height: 188px;
-    width: 245px;
-    border: solid 1px white;
+    height: 230px;
+    width: 250px;
+    border: solid 2px white;
     background-color: white;
-    border-radius: 10px 10px 0 0;
+    border-radius: 30px;
     padding: 5px;
     margin: 15px;
     font-size: 2px;
@@ -208,30 +274,65 @@ h1 {
     object-fit: cover;
     height: 114px;
     width: 235px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 30px 30px 0 0;
 }
 
-.description {
-    font-size: 10px;
+.description-hebergement {
+    font-size: 8px;
+    padding-left: 15px;
+    text-align: left;
 }
 
+.description-hebergement h3 {
+    font-size: 1.0rem;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 0;
+}
 
-.description a:visited {
+.description-hebergement a:visited {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 .stars {
-    font-size: 1px;
+    margin-top: 8px;
+    /*border:solid 1px red;*/
+    font-size: 2px;
 }
+
+.euro {
+    font-weight: bold;
+}
+
+#plus {
+    margin: 10% 0;
+    font-weight: bold;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.blue {
+    color: #0065fc;
+    font-size: 12px;
+}
+
+.grey {
+    color: grey;
+    font-size: 12px;
+}
+
 
 /*************************** POPULAIRES *****************************/
 
-#populaires {
+#ctr-populaires {
     background-color: #f2f2f2;
     border-radius: 20px;
     max-width: 420px;
-    /*border: 2px solid #f2f2f2;*/
+}
+
+#populaires h2 {
+    font-size: 25px;
 }
 
 
@@ -243,6 +344,10 @@ h1 {
     padding: 10px;
 }
 
+#card-une {
+    margin-top: 5px;
+}
+
 .populaires-card-list {
     border: white 2px solid;
     border-radius: 20px;
@@ -251,18 +356,21 @@ h1 {
     height: 144px;
     width: 343px;
     background-color: white;
-    margin: 10px;
+    margin: 20px;
 }
 
 
 .populaires-card-list h5 {
     font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
 
 .populaires-card-list a:visited {
-    color: black;
+    color: #000000;
 }
+
 
 .populaires-card-list img {
     height: 134px;
@@ -272,51 +380,68 @@ h1 {
     object-fit: cover;
 }
 
-#flex-title {
+#populaires-title {
     display: flex;
     justify-content: space-around;
-
-}
-
-.logo {
-    padding-top: 30px;
 }
 
 
-.stars {
-    font-size: 10px;
+
+.logos {
+    padding-top: 20px;
+    font-size: 25px;
 }
 
-.title span {
-    font-weight: bold;
+
+.title {
+    padding: 20px;    
 }
 
-.title a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: lighter;
+.prix {
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.blue {
-    color: #0065fc;
-    font-size: 16px;
-}
 
-.grey {
-    color: grey;
-    font-size: 16px;
-}
 
 #populaire {
     max-width: 421px;
 }
 
+.prix-lnk {
+    font-size:14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.blues {
+    font-size: 11px;
+    color: #0065fc;
+}
+
+.greys {
+    font-size: 11px;
+    color: grey;
+}
+
+.star{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
 /****************************** Activités ***************************************/
 
 #Act-marseille {
-    width: 1334px;
+    max-width: 1334px;
     margin: 0 auto;
 }
+
+#Act-marseille h2 {
+    font-size: 20px;
+    padding-left:25px;
+}
+
 
 #act-block {
     display: flex;
@@ -325,19 +450,381 @@ h1 {
     box-sizing: border-box;
 }
 
-.act-cols {
+.card-cols {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.act-cards {
+/* Card Vieux Port */
+#card-vieux-port {
     height: 455px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 300px;
-    border-radius: 20px;
+    width: 302px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none;
 }
 
+
+/* Image Card Vieux Port*/
+#card-vieux-port img {
+    border-radius: 20px 20px 0 0;
+    height: 390px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 80%;
+}
+
+
+/* Fort de Pomègues */
+#card-fort-de-pomegue {
+    height: 235px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 302px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none;    
+}
+
+/* Fort de Pomègues img */
+#card-fort-de-pomegue img {
+    height: 180px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 40%;
+}
+
+
+
+/* Iles du Frioul */
+#card-ile-du-frioul {
+    height: 164px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none; 
+}
+
+/* Iles du Frioul img*/
+#card-ile-du-frioul img {
+    height: 109px;
+    width: 302px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: 80% 20%;
+}
+
+
+/* Parc National des Calanques */
+#card-parc-national-des-calanques {
+    height: 455px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 302px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none;
+}
+
+/* Parc National des Calanques  img */
+#card-parc-national-des-calanques img {
+    border-radius: 20px 20px 0 0;
+    height: 390px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 10%;
+}
+
+#card-notre-dame-de-la-gare {
+    height: 195px;
+    width: 302px;
+    border-bottom: 1px solid white;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#card-notre-dame-de-la-gare img {
+    height: 140px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: 20% 0;
+}
+
+/* PARC LONGCHAMP */
+#card-parc-longchamp {
+    height: 210px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none ;
+}
+
+#card-parc-longchamp img {
+    height: 155px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: 20% 5%;
+}
+
+
+/*Card-FOOTER*/
+.card-foot {
+    height: 55px;
+    
+}
+
+.card-foot h5 {
+    margin-left: 20px
+}
+
+
+/**********************************************FOOTER*******************************************************/
+#footer {
+    background-color: #f2f2f2;
+    color: #000000;
+    margin-top: 2%;
+    padding: 0;
+    width: 100%;
+}  
+
+#footer-ctr {
+    max-width: 1334px;
+    margin: 0 auto;
+    border-color:solid 1px red;
+}
+
+#footer-bl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    max-width: 1230px;
+}
+
+
+.footer-block {
+    width: 360px;
+    padding-left:20px ;
+}
+
+.footer-block h4 {
+    font-size: 18px;
+}
+
+.footer-block p a {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+/************************************* RESPONSIVE TABLETTE PORTRAIT***********************************/
+@media screen and (max-width: 768px) {
+    /*body {
+        background-color: skyblue;
+    }*/
+
+/* -------------------------- LES PLUS POPULAIRES -------------- */
+#ctr-populaires {
+    max-width: 1024px;
+    border: 1px solid red;
+}
+
+
+#populaires-title {
+    margin: 0 auto;
+}
+
+.populaires-card-list {
+    margin: 5px auto;
+}
+
+.populaires-card-list {
+border: white 2px solid;
+border-radius: 20px;
+align-items: center;
+display: flex;
+height: 180px;
+width: 520px;
+background-color: white;
+margin: 20px auto;
+}
+
+.populaires-card-list img {
+    height: 170px;
+    width: 200px;
+    border-radius: 20px 0 0 20px;
+    padding: 3px;
+    object-fit: cover;
+}
+
+
+/*------------------------- SECTION ACTIVITE A MARSEILLE---------------------------------*/
+/* Card Vieux Port */
+#card-vieux-port {
+    height: 210px;
+    width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none ;
+}
+
+
+/* Image Card Vieux Port*/
+#card-vieux-port img {
+    height: 155px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: 10% 25%;
+}
+
+/* Fort de Pomègues */
+#card-fort-de-pomegue {
+    height: 210px;
+    width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none ;
+}
+
+/* Fort de Pomègues img */
+#card-fort-de-pomegue img {
+    height: 155px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    /*object-position: 20% 5%;*/
+}
+
+
+
+/* Iles du Frioul */
+#card-ile-du-frioul {
+    height: 235px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 600px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none;   
+}
+
+/* Iles du Frioul img*/
+#card-ile-du-frioul img {
+    height: 155px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: 20% 5%;
+}
+
+
+/* Parc National des Calanques */
+#card-parc-national-des-calanques {
+    height: 235px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 600px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none;
+}
+
+/* Parc National des Calanques  img */
+#card-parc-national-des-calanques img {
+    height: 155px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position:90% 99%;
+}
+
+#card-notre-dame-de-la-gare {
+    height: 235px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 600px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none;
+}
+
+#card-notre-dame-de-la-gare img {
+    height: 155px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: 20% 5%;
+}
+
+/* PARC LONGCHAMP */
+#card-parc-longchamp {
+    height: 235px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 600px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 24px;
+    border-top:none;
+    border-right: none;
+    border-left:none;
+}
+
+#card-parc-longchamp img {
+    height: 155px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: 25% 10%;
+}
+
+.card-space {
+    margin-top: 15px;
+}
+
+.card-port-space {
+    margin-top: 15px;
+}
+
+/*Card-FOOTER*/
 .card-foot {
     height: 55px;
 }
@@ -346,91 +833,103 @@ h1 {
     margin-left: 20px
 }
 
-.act-cards img {
-    border-radius: 20px 20px 0 0;
-    height: 390px;
-    overflow: auto;
-    width: 300px;
-    object-fit: cover;
-}
-
-.act-card-1 {
-    height: 235px;
-    border: 1px solid white;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 300px;
-}
-
-.act-card-1 img {
-    height: 180px;
-    border-radius: 20px 20px 0 0;
-    overflow: auto;
-    width: 300px;
-}
-
-.act-card-3 {
-    height: 164px;
-    border: 1px solid white;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 300px;
-}
-
-.act-card-3 img {
-    height: 109px;
-    width: 300px;
-    border-radius: 20px 20px 0 0;
-}
-
-#dame {
-    height: 195px;
-    width: 300px;
-    border: 1px solid white;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#dame img {
-    height: 140px;
-    width: 300px;
-    border-radius: 20px 20px 0 0;
-}
-
-#Longchamp {
-    height: 210px;
-    width: 300px;
-    border: 1px solid white;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#Longchamp img {
-    height: 155px;
-    width: 300px;
-    border-radius: 20px 20px 0 0;
-
-}
-
-/*FOOTER*/
-#footer {
-    background-color: #f2f2f2;
-    color: black;
-    margin-top: 2%;
-}  
-
-#footer-bl {
-    max-width: 1334px;
+/*colonnes*/
+.deux {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
+    flex-direction: column;
+}
+
+#act-marseille {
+    max-width: 768px;
+}
+
+#H-section {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #f2f2f2;
+}
 
 }
 
-.footer-block {
-    width: 445px;
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: green;
+    }
+
+
+/* SECTION HEBERGEMENT A MARSEILLE */
+  
+    #H-section {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #f2f2f2;
+    }
+
+    #hebergement h2 {
+        font-size: 25px;
+        margin-left: 80px;
+    }
+
+    #hebergement-cards {
+        margin: 0 auto;
+        max-width: 700px;
+        border: 2px solid red;
+    }
+
+    /* -----------SECTION LES PLUS POPULAIRES------------- */
+    #ctr-populaires {
+        margin: 0 auto;
+    }
+
+
+    #populaires-title {
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+    .populaires-card-list {
+        border: white 2px solid;
+        border-radius: 20px;
+        align-items: center;
+        display: flex;
+        height: 180px;
+        width: 620px;
+        background-color: white;
+        margin: 20px auto;
+        }
+        
+    .populaires-card-list img {
+            height: 170px;
+            width: 200px;
+            border-radius: 20px 0 0 20px;
+            padding: 3px;
+            object-fit: cover;
+        }
+
+    /* ------------------------- SECTION ACTIVITE A MARSEILLE --------------------------------------- */
+    
+    #Act-marseille {
+        margin: 10px auto;
+        max-width: 900px;
+    }
+
+    #act-block {
+        margin: 0 auto;
+       /* max-width: 900px;*/
+        border: 1px solid red;
+    }
+
+    #Act-marseille h2 {
+        margin-left: 50px;
+    }
+    
+    .card-space {
+     margin-top: 30px;
+    }
+    /* ----------------------- FOOTER   --------------------------------- */    
+    .footer-block {
+        width: 390px;
+        padding-left:20px ;
+    }
+
 }
-
-
-
