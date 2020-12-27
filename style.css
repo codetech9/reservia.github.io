@@ -865,7 +865,7 @@ margin: 20px auto;
 }
 
 /*------------------mode tablette paysage------------------------------ */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width:769px) and (max-width: 1024px) {
     body {
         background-color: yellow;
     }
