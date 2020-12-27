@@ -239,7 +239,7 @@ h3{
     flex-wrap: wrap;
     margin: 0 auto;
 }
-
+ 
 
 #hebergement {
     padding: 10px;
@@ -650,6 +650,39 @@ h3{
         background-color: skyblue;
     }
 
+/* ----- NAV BAR ------*/
+#header-desktop {
+    border: 1px solid red;
+    display: flex;
+    justify-content:space-evenly;
+    width: 768px;
+}
+
+#header-nav {
+    width: 364px;
+}
+
+.logo {
+    border: 1px solid darkblue;
+    width: 364px;
+    margin-top: none;
+}
+
+#nav-el {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    
+}
+
+#nav-el a {
+    border: 1px solid blue;
+    width: 364px;
+}
+
+.link {
+    width: 100%
+}
 
 /*----------- Formulaire de recherche -------------------*/
 .btn-srh {
@@ -657,22 +690,45 @@ h3{
 }
 
 .loupe {
-    color:white;
+    display:block !important
 }
+
+/*---------------------------- FILTRES ---------------------------------------------*/
+#ctr-filtres {
+    display: block;
+}
+
+#filtres {
+    flex-wrap:wrap;
+    max-width: 300px;
+   padding: 0;
+   margin: 0;
+}
+
+.filtres-list {
+    margin: 5px;
+}
+
+/*--------------------------- INFORMATIONS ---------------------------*/
+#info {
+    margin-top: 10px;
+}
+
 
 /* -------------------------- LES PLUS POPULAIRES -------------- */
 #ctr-populaires {
-    max-width: 1024px;
     border: 1px solid red;
+    max-width: 768px;
 }
 
 
-#populaires-title {
+#populaires-card {
+    border: 1px solid green;
     margin: 0 auto;
 }
 
-.populaires-card-list {
-    margin: 5px auto;
+#populaires-title {
+    margin: 0 auto;
 }
 
 .populaires-card-list {
@@ -681,9 +737,9 @@ border-radius: 20px;
 align-items: center;
 display: flex;
 height: 180px;
-width: 520px;
+width: 635px;
 background-color: white;
-margin: 20px auto;
+margin: 10px auto;
 }
 
 .populaires-card-list img {
@@ -694,12 +750,37 @@ margin: 20px auto;
     object-fit: cover;
 }
 
+.star{
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+/*--------------------- SECTION HEBERGEMENT -----------------------------------*/
+.h-list {
+    box-sizing: border-box;
+    height: 230px;
+    width: 270px;
+    border: solid 2px white;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 15px;
+    font-size: 2px;
+}
+
+.h-list img {
+    object-fit: cover;
+    height: 130px;
+    width: 255px;
+    border-radius: 20px 20px 0 0;
+}
+
 
 /*------------------------- SECTION ACTIVITE A MARSEILLE---------------------------------*/
 /* Card Vieux Port */
 #card-vieux-port {
     height: 210px;
-    width: 600px;
+    width: 650px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px;
@@ -722,7 +803,7 @@ margin: 20px auto;
 /* Fort de Pomègues */
 #card-fort-de-pomegue {
     height: 210px;
-    width: 600px;
+    width: 650px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px;
@@ -746,8 +827,8 @@ margin: 20px auto;
 /* Iles du Frioul */
 #card-ile-du-frioul {
     height: 235px;
+    width: 650px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 600px;
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px;
     border-radius: 24px;
@@ -769,8 +850,8 @@ margin: 20px auto;
 /* Parc National des Calanques */
 #card-parc-national-des-calanques {
     height: 235px;
+    width: 650px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 600px;
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px;
     border-radius: 24px;
@@ -790,8 +871,8 @@ margin: 20px auto;
 
 #card-notre-dame-de-la-gare {
     height: 235px;
+    width: 650px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 600px;
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px;
     border-radius: 24px;
@@ -811,8 +892,8 @@ margin: 20px auto;
 /* PARC LONGCHAMP */
 #card-parc-longchamp {
     height: 235px;
+    width: 650px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 600px;
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px;
     border-radius: 24px;
@@ -835,6 +916,7 @@ margin: 20px auto;
 
 .card-port-space {
     margin-top: 15px;
+    background-color: indigo;
 }
 
 /*Card-FOOTER*/
@@ -870,6 +952,10 @@ margin: 20px auto;
         background-color: yellow;
     }
 
+
+
+
+    
 /*----------- Formulaire de recherche -------------------*/
 .btn-srh {
     display: none;
@@ -879,6 +965,26 @@ margin: 20px auto;
     display:block !important
 }
 
+/*---------------------------- FILTRES ---------------------------------------------*/
+#ctr-filtres {
+    display: block;
+}
+
+#filtres {
+    flex-wrap:wrap;
+    max-width: 300px;
+   padding: 0;
+   margin: 0;
+}
+
+.filtres-list {
+    margin: 5px;
+}
+
+/*--------------------------- INFORMATIONS ---------------------------*/
+#info {
+    margin-top: 10px;
+}
 
 /* SECTION HEBERGEMENT A MARSEILLE */
   
@@ -899,16 +1005,38 @@ margin: 20px auto;
 
     #hebergement-cards {
         margin: 0 auto;
-        max-width: 820px;
+        max-width: 900px;
         border: 2px solid red;
     }
 
+    /*
     .h-list {
     object-fit: cover;
     height: 228px;
     width: 240px;
     border-radius: 30px 30px 0 0;
     }
+    */
+
+    .h-list {
+        box-sizing: border-box;
+        height: 230px;
+        width: 280px;
+        border: solid 2px white;
+        background-color: white;
+        border-radius: 30px;
+        padding: 5px;
+        margin: 15px; 
+        font-size: 2px;
+    }
+    
+    .h-list img {
+        object-fit: cover;
+        height: 130px;
+        width: 265px;
+        border-radius: 20px 20px 0 0;
+    }
+    
 
     /* -----------SECTION LES PLUS POPULAIRES------------- */
     #ctr-populaires {
@@ -919,13 +1047,13 @@ margin: 20px auto;
     #populaires-card {
         border: 1px solid RED;
         margin: 0 auto;
-        max-width: 1000PX;
+        max-width: 900PX;
     }
 
     #populaires-title {
         display: flex;
         justify-content: space-between;
-        width: 600px;
+        width: 700px;
         margin: 0 auto;
     }
  
@@ -935,7 +1063,7 @@ margin: 20px auto;
         align-items: center;
         display: flex;
         height: 180px;
-        width: 620px;
+        width: 720px;
         background-color: white;
         margin: 20px auto;
         flex-grow: 1;
@@ -971,7 +1099,7 @@ margin: 20px auto;
     }
     /* ----------------------- FOOTER   --------------------------------- */    
     .footer-block {
-        width: 390px;
+        width: 1024px;
         padding-left:20px ;
     }
 
