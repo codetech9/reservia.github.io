@@ -511,7 +511,7 @@ h3{
 #card-ile-du-frioul {
     height: 164px;
     border-radius: 20px;
-    width: 100%;
+    width: 302px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px;
@@ -644,463 +644,127 @@ h3{
 }
 
 
-/************************************* RESPONSIVE TABLETTE PORTRAIT***********************************/
-@media screen and (max-width: 768px) {
-    body {
-        background-color: skyblue;
+/* ------------------ Responsive tablette ---------------------------- */
+
+@media screen and (max-width: 1024px) {
+    
+/*Section hébergement et populaires*/
+#H-section {
+    /* Bloc hébergement et populaires  */
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/* Section Hebergement */
+#hebergement {
+    max-width: 1024px;
+    border: 1px solid red;
+}
+
+
+#hebergement h2 {
+    max-width: 1024px;
+    border: 1px solid green;
+    margin-left: 40px;
+}
+
+/*BLOCK DE TUILES */
+#hebergement-cards {
+    max-width: 1024px;
+    flex-wrap: wrap;
+}
+
+
+
+/*Section Populaire*/
+
+    /*Contenaire populaire*/
+    #ctr-populaires {
+        max-width: 1024px;
+        margin-bottom: 20px;
     }
 
-/* ----- NAV BAR ------*/
-#header-desktop {
+    /*populaires-title*/
+    #populaires-title {
+        max-width: 944px;
+        justify-content: space-between;
+        border: 1px solid red;
+        margin-left: 40px;
+    }
+
+
+    #populaires-title h2 {
+        font-size: 20px;
+    }
+
+
+    .logos {
+        border: 1px solid skyblue;
+    }
+
+
+    /**/
+    #populaires-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .populaires-card-list {
+        border : 1px solid blue;
+        width: 285px;
+    }
+
+    .populaires-card-list h5 {
+        font-size: 14px;
+    }
+
+    .prix-lnk {
+        font-size: 10px;
+    }
+
+    #card-une {
+        margin-top: 20px;
+    }
+
+    .star {
+        margin-bottom: 20px;
+    }
+
+
+/* Section Activité à Marseille  */
+ 
+#Act-marseille {
+    max-width: 1024px;
+}
+
+#act-block {
+   
     border: 1px solid red;
-    display: flex;
-    justify-content:space-evenly;
-    width: 768px;
-}
-
-#header-nav {
-    width: 364px;
-}
-
-.logo {
-    border: 1px solid darkblue;
-    width: 364px;
-    margin-top: none;
-}
-
-#nav-el {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap-reverse;
-    
-}
-
-#nav-el a {
-    border: 1px solid blue;
-    width: 364px;
-}
-
-.link {
-    width: 100%
-}
-
-/*----------- Formulaire de recherche -------------------*/
-.btn-srh {
-    display: none;
-}
-
-.loupe {
-    display:block !important
-}
-
-/*---------------------------- FILTRES ---------------------------------------------*/
-#ctr-filtres {
-    display: block;
-}
-
-#filtres {
-    flex-wrap:wrap;
-    max-width: 300px;
-   padding: 0;
-   margin: 0;
-}
-
-.filtres-list {
-    margin: 5px;
-}
-
-/*--------------------------- INFORMATIONS ---------------------------*/
-#info {
-    margin-top: 10px;
-}
-
-
-/* -------------------------- LES PLUS POPULAIRES -------------- */
-#ctr-populaires {
-    border: 1px solid red;
-    max-width: 768px;
-}
-
-
-#populaires-card {
-    border: 1px solid green;
-    margin: 0 auto;
-}
-
-#populaires-title {
-    margin: 0 auto;
-}
-
-.populaires-card-list {
-border: white 2px solid;
-border-radius: 20px;
-align-items: center;
-display: flex;
-height: 180px;
-width: 635px;
-background-color: white;
-margin: 10px auto;
-}
-
-.populaires-card-list img {
-    height: 170px;
-    width: 200px;
-    border-radius: 20px 0 0 20px;
-    padding: 3px;
-    object-fit: cover;
-}
-
-.star{
-    margin-top: 70px;
-    margin-bottom: 0px;
-}
-
-/*--------------------- SECTION HEBERGEMENT -----------------------------------*/
-.h-list {
-    box-sizing: border-box;
-    height: 230px;
-    width: 270px;
-    border: solid 2px white;
-    background-color: white;
-    border-radius: 30px;
-    padding: 5px;
-    margin: 15px;
-    font-size: 2px;
-}
-
-.h-list img {
-    object-fit: cover;
-    height: 130px;
-    width: 255px;
-    border-radius: 20px 20px 0 0;
-}
-
-
-/*------------------------- SECTION ACTIVITE A MARSEILLE---------------------------------*/
-/* Card Vieux Port */
-#card-vieux-port {
-    height: 210px;
-    width: 650px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius: 20px;
-    border-radius: 24px;
-    border-top:none;
-    border-right: none;
-    border-left:none ;
-}
-
-
-/* Image Card Vieux Port*/
-#card-vieux-port img {
-    height: 155px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    object-position: 10% 25%;
-}
-
-/* Fort de Pomègues */
-#card-fort-de-pomegue {
-    height: 210px;
-    width: 650px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius: 20px;
-    border-radius: 24px;
-    border-top:none;
-    border-right: none;
-    border-left:none ;
-}
-
-/* Fort de Pomègues img */
-#card-fort-de-pomegue img {
-    height: 155px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    /*object-position: 20% 5%;*/
-}
-
-
-
-/* Iles du Frioul */
-#card-ile-du-frioul {
-    height: 235px;
-    width: 650px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius: 20px;
-    border-radius: 24px;
-    border-top:none;
-    border-right: none;
-    border-left:none;   
-}
-
-/* Iles du Frioul img*/
-#card-ile-du-frioul img {
-    height: 155px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    object-position: 20% 5%;
-}
-
-
-/* Parc National des Calanques */
-#card-parc-national-des-calanques {
-    height: 235px;
-    width: 650px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius: 20px;
-    border-radius: 24px;
-    border-top:none;
-    border-right: none;
-    border-left:none;
-}
-
-/* Parc National des Calanques  img */
-#card-parc-national-des-calanques img {
-    height: 155px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    object-position:90% 99%;
-}
-
-#card-notre-dame-de-la-gare {
-    height: 235px;
-    width: 650px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius: 20px;
-    border-radius: 24px;
-    border-top:none;
-    border-right: none;
-    border-left:none;
-}
-
-#card-notre-dame-de-la-gare img {
-    height: 155px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    object-position: 20% 5%;
-}
-
-/* PARC LONGCHAMP */
-#card-parc-longchamp {
-    height: 235px;
-    width: 650px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius: 20px;
-    border-radius: 24px;
-    border-top:none;
-    border-right: none;
-    border-left:none;
-}
-
-#card-parc-longchamp img {
-    height: 155px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    object-position: 25% 10%;
-}
-
-.card-space {
-    margin-top: 15px;
+    justify-content: space-around;
 }
 
 .card-port-space {
-    margin-top: 15px;
-    background-color: indigo;
+    margin: 20px;
 }
 
-/*Card-FOOTER*/
-.card-foot {
-    height: 55px;
+.card-space {
+    margin: 20px;
 }
 
-.card-foot h5 {
-    margin-left: 20px
+/* FOOTER */
+
+/*contenairs footer*/
+.footer-ctr {
+    flex-wrap: wrap;
 }
 
-/*colonnes*/
-.deux {
-    display: flex;
-    flex-direction: column;
+/*blocks footer*/
+.footer-block {
+    width: 100%;
 }
-
-#act-marseille {
-    max-width: 768px;
-}
-
-#H-section {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: #f2f2f2;
-}
-
-}
-
-/*------------------mode tablette paysage------------------------------ */
-@media screen and (min-width:769px) and (max-width: 1024px) {
-    body {
-        background-color: yellow;
-    }
-
-
-
-
-    
-/*----------- Formulaire de recherche -------------------*/
-.btn-srh {
-    display: none;
-}
-
-.loupe {
-    display:block !important
-}
-
-/*---------------------------- FILTRES ---------------------------------------------*/
-#ctr-filtres {
-    display: block;
-}
-
-#filtres {
-    flex-wrap:wrap;
-    max-width: 300px;
-   padding: 0;
-   margin: 0;
-}
-
-.filtres-list {
-    margin: 5px;
-}
-
-/*--------------------------- INFORMATIONS ---------------------------*/
-#info {
-    margin-top: 10px;
-}
-
-/* SECTION HEBERGEMENT A MARSEILLE */
-  
-    #H-section {
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: #f2f2f2;
-    }
-
-    #hebergement {
-        max-width: 1000px;
-    }
-
-    #hebergement h2 {
-        font-size: 25px;
-        margin-left: 80px;
-    }
-
-    #hebergement-cards {
-        margin: 0 auto;
-        max-width: 900px;
-        border: 2px solid red;
-    }
-
-    /*
-    .h-list {
-    object-fit: cover;
-    height: 228px;
-    width: 240px;
-    border-radius: 30px 30px 0 0;
-    }
-    */
-
-    .h-list {
-        box-sizing: border-box;
-        height: 230px;
-        width: 280px;
-        border: solid 2px white;
-        background-color: white;
-        border-radius: 30px;
-        padding: 5px;
-        margin: 15px; 
-        font-size: 2px;
-    }
-    
-    .h-list img {
-        object-fit: cover;
-        height: 130px;
-        width: 265px;
-        border-radius: 20px 20px 0 0;
-    }
-    
-
-    /* -----------SECTION LES PLUS POPULAIRES------------- */
-    #ctr-populaires {
-        max-width: 100%;
-    }
-
-
-    #populaires-card {
-        border: 1px solid RED;
-        margin: 0 auto;
-        max-width: 900PX;
-    }
-
-    #populaires-title {
-        display: flex;
-        justify-content: space-between;
-        width: 700px;
-        margin: 0 auto;
-    }
- 
-    .populaires-card-list {
-        border: white 2px solid;
-        border-radius: 20px;
-        align-items: center;
-        display: flex;
-        height: 180px;
-        width: 720px;
-        background-color: white;
-        margin: 20px auto;
-        flex-grow: 1;
-        }
-        
-    .populaires-card-list img {
-            height: 170px;
-            width: 200px;
-            border-radius: 20px 0 0 20px;
-            padding: 3px;
-            object-fit: cover;
-        }
-
-    /* ------------------------- SECTION ACTIVITE A MARSEILLE --------------------------------------- */
-    
-    #Act-marseille {
-        margin: 10px auto;
-        max-width: 900px;
-    }
-
-    #act-block {
-        margin: 0 auto;
-       /* max-width: 900px;*/
-        border: 1px solid red;
-    }
-
-    #Act-marseille h2 {
-        margin-left: 50px;
-    }
-    
-    .card-space {
-     margin-top: 30px;
-    }
-    /* ----------------------- FOOTER   --------------------------------- */    
-    .footer-block {
-        width: 1024px;
-        padding-left:20px ;
-    }
 
 }
