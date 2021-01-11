@@ -276,7 +276,7 @@ h3{
 .h-list img {
     object-fit: cover;
     height: 114px;
-    width: 235px;
+    width: 100%;
     border-radius: 30px 30px 0 0;
 }
 
@@ -651,7 +651,6 @@ h3{
 /*Section hébergement et populaires*/
 #H-section {
     /* Bloc hébergement et populaires  */
-    background-color: #f2f2f2;
     display: flex;
     flex-direction: column-reverse;
 }
@@ -660,7 +659,7 @@ h3{
 /* Section Hebergement */
 #hebergement {
     max-width: 1024px;
-    border: 1px solid red;
+    background-color: #f2f2f2;
 }
 
 
@@ -676,6 +675,11 @@ h3{
     flex-wrap: wrap;
 }
 
+/*Afficher plus*/
+#plus {
+    margin-left: 20px;
+}
+
 
 
 /*Section Populaire*/
@@ -684,13 +688,13 @@ h3{
     #ctr-populaires {
         max-width: 1024px;
         margin-bottom: 20px;
+        background-color: #f2f2f2;
     }
 
     /*populaires-title*/
     #populaires-title {
         max-width: 944px;
         justify-content: space-between;
-        border: 1px solid red;
         margin-left: 40px;
     }
 
@@ -707,15 +711,14 @@ h3{
 
     /**/
     #populaires-card {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .populaires-card-list {
-        border : 1px solid blue;
-        width: 285px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .populaires-card-list h5 {
@@ -741,9 +744,11 @@ h3{
     max-width: 1024px;
 }
 
+#Act-marseille h2  {
+    margin-left: 90px;
+}
+
 #act-block {
-   
-    border: 1px solid red;
     justify-content: space-around;
 }
 
@@ -768,3 +773,5 @@ h3{
 }
 
 }
+
+
