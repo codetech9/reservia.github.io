@@ -1,5 +1,3 @@
-/*-----------------------Paufiner les blocks------------------------------*/
-
 /*------------------- Fonts -------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -682,7 +680,6 @@ h3 {
         max-width: 100%;
     }
     
-    
      #ctr-populaires {
          width: 100%;
          max-width: 100%;
@@ -753,57 +750,99 @@ h3 {
         display: block;
     }
 
-    #logo-inscription{
+    #logo-inscription-mobile{
         margin: 20px;
+    }
+
+    #header-mobile #logo-inscription-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    #header-mobile #logo-inscription-mobile a {
+        color: #0065FC;
+    }
+
+    #header-nav-mobile {
+        width: 100%;
+    }
+
+    #nav-el-mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo-inscription-mobile>a.link {
+        font-size: 1.2em;
+        padding-bottom: 10px;
+    }
+
+    #nav-el-mobile>a{
+        width: 50%;
+        padding: 20px 0;
+        font-size: 1.2em;
+    }
+
+    #nav-el-mobile>a.Hebergement {
+        border-top: none;
+        border-bottom: #0065FC solid 3px;
+        text-align: start;
+        padding-left: 40px;
+    }
+
+    #nav-el-mobile > a.link{
+        border-bottom: #F3F3F3 solid 3px;
+        text-align: end;
+        padding-right: 40px;
+    }
+
+    #header-desktop {
+        display: none;
+    }
+
+    #forms,
+    #forms > div:nth-child(2),
+    #formsize{
+        width: 100%;
     }
 
     #forms{
         margin: 30px 0;
     }
 
-    h1{
-        font-size: 1.3em;
+    .btn-srh{
+        display: none;
     }
 
-    #ctr-filtres h3{
-        margin: 0 0 10px 0;
+    .loupe{
+        display: block;
     }
 
+    .button {
+        position: relative;
+        left: -10px;
+        width: 60px;
+        border-radius: 15px 15px 15px 15px;
+    }
+    
     .map {
         width: 50px;
     }
 
-    #populaires-card .populaires-card-list .div-img{
-        width: 100%;
-        max-width: 35%;
+
+   
+
+    /*h1*/
+    h1{
+        font-size: 1.3em;
     }
 
-    #H-section{
-        margin: 0;
-    }
 
-    #H-section #ctr-populaires{
-        border-radius: 0;
-        padding: 20px;
-        margin-bottom: 0;
-    }
+    /*---------- Section filtres --------*/
 
-    #populaires-card > div:nth-child(2) > div.title{
-        width: 65%;
-    }
-    #populaires-card .populaires-card-list{
-        padding: 0;
-        margin: 0;
-    }
-
-    #ctr-populaires .populaires-card-list img{
-        width: 100%;
-        display: block;
-    }
-    
-    #ctr-populaires .div-img{
-        width: 35%;
-        height: auto;
+    #ctr-filtres h3{
+        margin: 0 0 10px 0;
     }
 
     #ctr-filtres {
@@ -825,89 +864,45 @@ h3 {
         align-content: space-between;
     }
 
-    #header-mobile #logo-inscription {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    #header-mobile #logo-inscription a {
-        color: #0065FC;
-    }
-
-    #header-nav {
-        width: 100%;
-    }
-
-    #nav-el {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #logo-inscription>a.link {
-        font-size: 1.2em;
-        padding-bottom: 10px;
-    }
-
-    
-    #nav-el>a{
-        width: 50%;
-        padding: 20px 0;
-        font-size: 1.2em;
-    }
-
-    #nav-el>a.Hebergement {
-        border-top: none;
-        border-bottom: #0065FC solid 3px;
-        text-align: start;
-        padding-left: 40px;
-    }
-
-    #nav-el > a.link{
-        border-bottom: #F3F3F3 solid 3px;
-        text-align: end;
-        padding-right: 40px;
-    }
-
-    #header-desktop {
-        display: none;
-    }
-
-    .btn-srh{
-        display: none;
-    }
-
-    .loupe{
-        display: block;
-    }
-
-
-
-    .button {
-        position: relative;
-        left: -10px;
-        width: 60px;
-        border-radius: 15px 15px 15px 15px;
-    }
-    #forms,
-    #forms > div:nth-child(2),
-    #formsize{
-        width: 100%;
-    }
-
     #info p#info-desc{
         font-size: 12px;
     }
 
-    #footer-bl .footer-block{
-        width: 100%;
+
+    #H-section{
+        margin: 0;
     }
 
-    #hebergement h2{
-        font-size: 1.3em;
+    #H-section #ctr-populaires{
+        border-radius: 0;
+        padding: 20px;
+        margin-bottom: 0;
+    }
+
+    /*---- Section les plus populaires ----*/
+
+    #populaires-card .populaires-card-list .div-img{
+        width: 100%;
+        max-width: 35%;
+    }
+
+
+    #populaires-card > div:nth-child(2) > div.title{
+        width: 65%;
+    }
+    #populaires-card .populaires-card-list{
+        padding: 0;
+        margin: 0;
+    }
+
+    #ctr-populaires .populaires-card-list img{
+        width: 100%;
+        display: block;
+    }
+    
+    #ctr-populaires .div-img{
+        width: 35%;
         height: auto;
-        line-height: normal;
-        margin: 30px 0 10px;
     }
 
     #H-section #hebergement {
@@ -918,6 +913,14 @@ h3 {
         justify-content: space-between;
         padding: 20px;
         margin-bottom: 0;
+    }
+    
+
+    #hebergement h2{
+        font-size: 1.3em;
+        height: auto;
+        line-height: normal;
+        margin: 30px 0 10px;
     }
 
     #hebergement-cards {
@@ -932,6 +935,14 @@ h3 {
         box-shadow: 1px 4px 15px 12px rgba(0, 0, 0, 0.10);
         min-width: 100px;
     }
+    
+    .h-list img {
+        object-position: 50% 68%;
+    }
+
+    .description-hebergement h3 {
+        margin: 0;
+    }
 
     #plus{
         display: block;
@@ -940,14 +951,8 @@ h3 {
         height: auto
     }
 
-    #Act-marseille h2{
-        margin-bottom: 30px;
-    }
-
-    .description-hebergement h3 {
-        margin: 0;
-    }
-
+    /*---- Section Activités à Marseille ----*/
+    
     #Act-marseille {
         max-height: none;
     }
@@ -964,6 +969,11 @@ h3 {
         width: 100%;
         margin-bottom: 20px;
     }
+
+    #Act-marseille h2{
+        margin-bottom: 30px;
+    }
+
 
     #Act-marseille #act-block .card-cols {
         width: 100% !important;
@@ -983,9 +993,30 @@ h3 {
         justify-content: space-between;
     }
 
+    #card-fort-de-pomegue img {
+        object-position: 50% 50%;
+    }
+    
+    
+    #card-parc-national-des-calanques img {
+        object-position: 60% 65%;
+    }
+    
+    
+    #card-notre-dame-de-la-gare img {
+        object-position: 20% 0;
+    }  
+
+
+    /*----- Section Footer -----*/
     #footer {
         height: 100%;
     }
+
+    #footer-bl .footer-block{
+        width: 100%;
+    }
+
 
     #footer-bl {
         margin-top: 30px;
