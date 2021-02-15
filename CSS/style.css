@@ -72,6 +72,10 @@ body a {
     font-weight: bold;
 }
 
+.link:hover {
+    border-top: #0065FC solid 2px;
+}
+
 #header-desktop :nth-child(2) {
     color: #000000;
     font-weight: 600;
@@ -180,9 +184,8 @@ h1 {
     border: 1px solid #d9d9d9;
     border-radius: 50px 50px;
     margin-right: 20px;
-    padding: 9px
+    padding: 9px;
 }
-
 
 
 .filt-desc {
@@ -199,6 +202,7 @@ h3 {
     color: #0065fc;
 }
 
+
 .circles {
     background-color: #deebff;
     padding: 10px;
@@ -206,6 +210,14 @@ h3 {
     margin-left: -10px;
     height: 80px;
     width: 80px;
+}
+
+li.filtres-list {
+    transition: transform .2s; /* Animation */
+}
+
+li.filtres-list:hover {
+    transform: scale(1.2);
 }
 
 /* ---------------------Section Informations --------------------------------------- */
@@ -291,6 +303,7 @@ h3 {
     border-radius: 30px;
     padding: 5px;
     font-size: 2px;
+    transition: transform .2s; /* Animation */
 }
 
 .h-list img {
@@ -298,6 +311,10 @@ h3 {
     height: 97px;
     width: 100%;
     border-radius: 30px 30px 0 0;
+}
+
+.h-list:hover {
+    transform: scale(1.2);
 }
 
 .description-hebergement {
@@ -334,6 +351,10 @@ h3 {
     line-height: 107px;
     font-weight: bold;
     font-size: 18px;
+}
+
+#plus:hover {
+    color: #0065FC;
 }
 
 .blue {
@@ -384,8 +405,12 @@ h3 {
     height: 144px;
     width: 100%;
     background-color: white;
+    transition: transform .2s; /* Animation */
 }
 
+.populaires-card-list:hover {
+    transform: scale(1.0);
+}
 
 .populaires-card-list h5 {
     font-size: 16px;
@@ -413,7 +438,6 @@ h3 {
 }
 
 
-
 .logos {
     line-height: 91px;
     height: 91px;
@@ -429,7 +453,6 @@ h3 {
     font-size: 14px;
     font-weight: 400;
 }
-
 
 
 #populaire {
@@ -494,8 +517,13 @@ h3 {
     border-top: none;
     border-right: none;
     border-left: none;
+    transition: transform .2s; /* Animation */
 }
 
+
+#card-vieux-port:hover {
+    transform: scale(1.1);
+}
 
 /* Image Card Vieux Port*/
 #card-vieux-port img {
@@ -518,6 +546,11 @@ h3 {
     border-top: none;
     border-right: none;
     border-left: none;
+    transition: transform .2s; /* Animation */
+}
+
+#card-fort-de-pomegue:hover {
+    transform: scale(1.1);
 }
 
 /* Fort de Pomègues img */
@@ -543,7 +576,13 @@ h3 {
     border-top: none;
     border-right: none;
     border-left: none;
+    transition: transform .2s; /* Animation */
 }
+
+#card-ile-du-frioul:hover {
+    transform: scale(1.1);
+}
+
 
 /* Iles du Frioul img*/
 #card-ile-du-frioul img {
@@ -566,7 +605,12 @@ h3 {
     border-top: none;
     border-right: none;
     border-left: none;
+    transition: transform .2s; /* Animation */
 }
+
+#card-parc-national-des-calanques:hover {
+    transform: scale(1.1);
+} 
 
 /* Parc National des Calanques  img */
 #card-parc-national-des-calanques img {
@@ -586,6 +630,11 @@ h3 {
     border-right: none;
     border-left: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .2s; /* Animation */
+}
+
+#card-notre-dame-de-la-gare:hover {
+    transform: scale(1.1);
 }
 
 #card-notre-dame-de-la-gare img {
@@ -607,6 +656,11 @@ h3 {
     border-top: none;
     border-right: none;
     border-left: none;
+    transition: transform .2s; /* Animation */
+}
+
+#card-parc-longchamp:hover {
+    transform: scale(1.1);
 }
 
 #card-parc-longchamp img {
@@ -679,6 +733,9 @@ h3 {
     font-size: 16px;
 }
 
+.footer-block p a:hover {
+    color: #0065fc;
+}
 
 /************************************* RESPONSIVE TABLETTE PORTRAIT***********************************/
 @media screen and (max-width: 1380px) {
@@ -755,7 +812,44 @@ h3 {
     }
 }
 
-/*---- Footer-----*/
+/*-------------------- Animartions -------------------------*/
+
+/*Animations filtres*/
+li.filtres-list:hover {
+    transform: scale(1.2);
+}
+
+/*Animations cards populaires*/
+.populaires-card-list:hover {
+    transform: scale(1.1);
+}
+
+/*Animations*/
+#card-vieux-port:hover {
+    transform: scale(1.1);
+}
+
+#card-fort-de-pomegue:hover {
+    transform: scale(1.1);
+}
+
+#card-ile-du-frioul:hover {
+    transform: scale(1.1);
+}
+
+#card-parc-national-des-calanques:hover {
+    transform: scale(1.1);
+} 
+
+#card-notre-dame-de-la-gare:hover {
+    transform: scale(1.1);
+}
+
+#card-parc-longchamp:hover {
+    transform: scale(1.1);
+}
+
+/*------------------- Footer ------------------*/
 #footer-bl .footer-block {
     width: 30%;
 }
@@ -767,6 +861,9 @@ h3 {
 .footer-block:nth-child(2) {
     margin: 0;
 }
+
+
+/*------------------------------ Responsive mobile ----------------------------------------*/
 
 @media screen and (max-width: 820px) {
     #header-mobile {
@@ -929,6 +1026,8 @@ h3 {
         height: auto;
     }
 
+    /*Section Hébergement à Marseille*/
+
     #H-section #hebergement {
         height: auto;
         background-color: white;
@@ -964,10 +1063,12 @@ h3 {
         object-position: 50% 68%;
     }
 
+
     .description-hebergement h3 {
         margin: 0;
     }
 
+    /*Liens afficher plus*/
     #plus {
         display: block;
         line-height: normal;
